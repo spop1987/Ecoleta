@@ -66,7 +66,7 @@ module.exports = db
 //         console.log("Registro deletado com sucesso")
 //     }
 
-//     db.run(`DELETE FROM places WHERE ID = ?`, [9], afterDeleteData)
+//     db.run(`DELETE FROM places WHERE ID = ?`, [11], afterDeleteData)
 
 //     // 4. consultar os dados da tabela
 
