@@ -28,7 +28,18 @@ server.get("/create-point", (req, res) => {
     // req.query: Query Strings da nossa url
     // console.log(req.query)
 
-    // inserir dados no banco de dados 
+   
+
+    //  res.sendFile(__dirname + "/views/create-point.html")
+    return res.render("create-point.html")
+})
+
+server.post("/savepoint", (req, res) => {
+    
+    // req.body: O corpo do nosso formulario
+    // console.log(req.body)
+    
+     // inserir dados no banco de dados 
 
     // 2. inserir dados na tabela
     const query = `
@@ -58,21 +69,10 @@ server.get("/create-point", (req, res) => {
         
         console.log("Cadastrado com sucesso")
         console.log(this)
-        return res.send("ok")
+        return res.render("create-point.html" {saved: true})
     }
     
     db.run(query, values, afterInsertData)
-
-    //  res.sendFile(__dirname + "/views/create-point.html")
-    // return res.render("create-point.html")
-})
-
-server.post("/savepoint", (req, res) => {
-    
-    // req.body: O corpo do nosso formulario
-    console.log(req.body)
-    
-    return res.send("ok")
 })
 
 

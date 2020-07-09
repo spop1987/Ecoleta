@@ -59,24 +59,24 @@ module.exports = db
 
     
 //     // 3. deletar um dado da tabela
-//     // function afterDeleteData(error){
-//     //     if(error)
-//     //         return console.log(error)
+//     function afterDeleteData(error){
+//         if(error)
+//             return console.log(error)
 
-//     //     console.log("Registro deletado com sucesso")
-//     // }
+//         console.log("Registro deletado com sucesso")
+//     }
 
-//     // db.run(`DELETE FROM places WHERE ID = ?`, [4], afterDeleteData)
+//     db.run(`DELETE FROM places WHERE ID = ?`, [9], afterDeleteData)
 
-//     // // 4. consultar os dados da tabela
+//     // 4. consultar os dados da tabela
 
-//     // function getData(error, rows){
-//     //     if(error)
-//     //         return console.log(error)
+//     function getData(error, rows){
+//         if(error)
+//             return console.log(error)
 
-//     //     console.log("Aqui estão seus registros")
-//     //     console.log(rows)
-//     // }
+//         console.log("Aqui estão seus registros")
+//         console.log(rows)
+//     }
 
-//     // db.all(`SELECT * FROM places`, getData)
+//     db.all(`SELECT * FROM places`, getData)
 // })
