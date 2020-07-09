@@ -1,21 +1,16 @@
 const express = require("express")
 
 const server = express()
-
 // pegar o banco de dados
 const db = require("./database/db.js")
-
 // configurar pasta publica
 server.use(express.static("public"))
-
 // utilizando template engine: sem cache em quanto estou desenvolvendo
 const nunjucks = require("nunjucks")
 nunjucks.configure("src/views", {
     express: server,
     noCache: true
 })
-
-
 // configurar caminhos da minha aplicacao
 // pagina inicial
 // req: requisiçaõ/ require
